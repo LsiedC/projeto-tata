@@ -16,7 +16,7 @@
 }
 
 .titulo-nav:first-child .nav-link {
-    background: linear-gradient(90deg, #630061, #ff00f4);
+    background: linear-gradient(90deg, #630061,  #ff00f4, #ff00f4);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
