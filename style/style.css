@@ -1,9 +1,22 @@
+/* INICIO FONTES */
+@font-face {
+    font-family: 'Poppins';
+    src: url('../assets/fonts/Poppins-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Glacial';
+    src: url('../assets/fonts/glacial-indifference/GlacialIndifference-Regular.otf') format('truetype');
+}
+/* FIM FONTES */
+
+
 /* NAVBAR */
 .navbar{
     background-color: rgb(0, 0, 0);
     position:absolute;
     width: 100%;
-    z-index: 9999; 
+    z-index: 9999;
+    font-family:'Glacial';
 }
 
 
@@ -125,6 +138,5 @@ main{
     opacity:0.35;
 
     filter:drop-shadow(0 0 12px rgba(0, 0, 0, 0.60));
-
 }
 
