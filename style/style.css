@@ -409,3 +409,31 @@ main {
   COMECO PAGINA TIMELINE
 ========================== 
 */
+
+.timeline-container {
+    position: relative;
+    max-width: 1200px;
+    margin: 100px auto;
+}
+
+.container {
+    position: relative;
+    width: 50%;
+    padding: 10px 50px;
+}
+
+.left-container {
+    left: -30%;
+}
+
+.right-container {
+    right: -30%;
+}
+
+.text-box {
+    padding: 20px 30px;
+    background: #fff;
+    position: relative;
+    border-radius: 6px;
+    font-size: 15px;
+}
