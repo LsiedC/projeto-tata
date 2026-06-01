@@ -438,10 +438,9 @@ main {
     font-size: 15px;
 }
 
-/*
-    ============================
-    COMEÇO As palavras de saramago
-    ============================
+/* ============================
+    COMEÇO Tela-mensagem
+    ============================ 
 */
 
 #background-tela{
@@ -457,11 +456,10 @@ main {
         padding: 20px;
     }
 }
-
 #saramago-container{
     width: 100%;
     max-width: 700px;
-
+    justify-content: center;
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -472,18 +470,16 @@ main {
         width: 80%;
     }
 }
-
-
 #saramago-texto{
     color: #ff00ff;
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 22px;
     line-height: 1.8;
 }
 
 @media (max-width: 768px) {
     #saramago-texto{
-        font-size: 12px;
+        font-size: 1.2rem;
     }
 }
 
@@ -495,7 +491,55 @@ main {
 
 @media (max-width: 768px) {
     #saramago-autor{
-        font-size: 10px;
+        font-size: 12px;
         font-weight: bold;
     }
 }
+
+#page-transition{
+
+    transform: scale(1);
+    opacity: 1;
+
+    transition:
+        transform 1.2s ease-in,
+        opacity 1.2s ease-in;
+
+    transform-origin: center center;
+
+}
+
+#page-transition.enter-next-page{
+    transform: scale(3);
+    opacity: 0;
+}
+/* ============================
+    FIM Tela-mensagem
+    ============================ 
+*/
+
+/* --------------------------------------------- */
+
+/* ============================
+    COMEÇO Tela-autor
+    ============================ 
+*/
+#autor-projeto{
+    color: #ff00ff;
+    text-align: center;
+    font-size: 22px;
+    line-height: 1.8;
+}
+
+#autor-container{
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* ============================
+    FIM Tela-autor
+    ============================ 
+*/
