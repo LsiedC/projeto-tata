@@ -224,7 +224,8 @@ main {
 }
 
 #texto-segredos {
-    font-size: 10px;
+    font-size: 12px;
+    font-weight: bold;
     font-family: 'Poppins';
     color: #ff00f4;
 }
@@ -420,6 +421,8 @@ main {
 ========================== 
 */
 #box-sizing{
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 .timeline-main {
@@ -428,29 +431,106 @@ main {
     margin: 100px auto;
 }
 
-.container {
+.timeline-container{
     padding: 10px 50px;
     position: relative;
     width: 50%;
-    padding: 10px 50px;
+    z-index: 1;
+    animation: movedown 1s linear forwards;
+    opacity: 0;
+}
+@keyframes movedown {
+    0% {
+        opacity: 1;
+        transform: translateY(-30px);
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
-.left-container {
-    left: 0;
-}
-
-.right-container {
-    left: 50%;
-}
-
-.text-box {
+.text-box{
     padding: 20px 30px;
-    background: #fff;
+    background: #000000;
+    color: #ff00f4;
     position: relative;
     border-radius: 6px;
-    font-size: 15px;
+    font-size: 16px;
+}
+.left-container{
+    left: 0;
+}
+.right-container{
+    left: 50%;
+}
+.timeline-container img{
+    position: absolute;
+    width: 35px;
+    border-radius: 50%;
+    right: -17px;
+    top: 32px;
+    z-index: 10;
+    background: #000000;
+    border: 4px solid #000000;
+}
+.right-container img{
+    left: -17px;
+    background: #000000;
+    border: 4px solid #000000;
+}
+.timeline-main::after{
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background-color: #000000;
+    top: 0;
+    left: 50%;
+    margin-left: -3px;
+    z-index: 0;
+    animation: moveline 8s linear forwards;
+}
+@keyframes moveline {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 100%;
+    }
 }
 
+.text-box h2{
+    font-weight: 600;
+}
+.text-box small{
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.left-container-arrow{
+    height: 0;
+    width: 0;
+    position:absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid #000000;
+    right: -15px;
+}
+
+.right-container-arrow{
+    height: 0;
+    width: 0;
+    position:absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid #000000;
+    left: -15px;
+}
 /* ============================
     COMEÇO Tela-mensagem
     ============================ 
