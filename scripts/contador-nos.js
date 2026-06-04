@@ -27,8 +27,7 @@ function atualizarContador() {
     const segundos = Math.floor(diferenca / segundo);
 
     document.getElementById("contador-tempo").innerHTML =
-        `Nos conhecemos há ${meses} meses, ${dias} dias, ${horas} horas, ${minutos} minutos e ${segundos} segundos e essa página é exclusivamente para lembrarmos alguma das muitas coisas que já fizemos nesse meio tempo aí` ;
+        `Nos conhecemos há <strong>${meses} meses</strong>, <strong>${dias} dias</strong>, <strong>${horas} horas</strong>, <strong>${minutos} minutos</strong> e <strong>${segundos} segundos</strong> e essa página é exclusivamente para lembrarmos alguma das muitas coisas que já fizemos nesse meio tempo aí`;
 }
-
 atualizarContador();
 setInterval(atualizarContador, 1000);
