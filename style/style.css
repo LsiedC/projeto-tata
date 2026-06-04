@@ -1,7 +1,7 @@
 /* INICIO FONTES */
 @font-face {
     font-family: 'Poppins';
-    src: url('../assets/fonts/Poppins-Italic.ttf') format('truetype');
+    src: url('../assets/fonts/Poppins/Poppins-Medium.ttf') format('truetype');
 }
 
 @font-face {
@@ -37,6 +37,7 @@
     -webkit-text-fill-color: transparent;
     color: transparent;
 }
+
 
 .navbar-nav {
     display: flex;
@@ -189,6 +190,7 @@ main {
     text-align: center;
     font-size: 24.5px;
     font-family: 'Poppins';
+    font-style: italic;
     margin-top: -14px;
     margin-bottom: 18px;
 }
@@ -203,6 +205,7 @@ main {
 .texto-pro {
     margin-right: 10px;
     margin-left: 10px;
+    font-style: italic;
 }
 
 .href:hover {
@@ -218,8 +221,9 @@ main {
     border-radius: 10px;
 }
 .descricao {
-    font-size: 22px;
+    font-size: 18px;
     font-family: 'Poppins';
+    font-style: italic;
     min-height: 18vh;
 }
 
@@ -420,6 +424,55 @@ main {
   COMECO PAGINA TIMELINE
 ========================== 
 */
+#cronologh{
+    width: 100%;
+    align-items: center;
+    padding-top: 20vh;
+    color: #ff00f4;
+    display: flex;
+    font-size: 35px;
+    font-family: 'Glacial';
+    align-items: center;
+    justify-content: center;
+    text-shadow: 2px 0px 5px #120020;
+}
+
+#cronologh p {
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    background: linear-gradient(90deg,
+            #8d008d 40%,
+            #ff00f4 60%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#cronologh p::after {
+    content: "";
+    position: absolute;
+    left: -15px;
+    right: -15px;
+    bottom: -5px;
+    height: 2px;
+    background: linear-gradient(to right,
+            #220022 10%,
+            #250025 5%,
+            #330033 20%,
+            #8d008d 60%,
+            #ff00f4 100%);
+}
+
+@media (max-width: 768px) {
+    #cronologh{
+        font-family: 'Glacial';
+        text-align: center;
+        padding-right: 0;
+        color: #ff00f4;
+    }
+}
+
 #box-sizing{
     margin: 0;
     padding: 0;
@@ -430,8 +483,15 @@ main {
     max-width: 1200px;
     margin: 100px auto;
 }
-
 .timeline-container{
+    padding: 10px 50px;
+    position: relative;
+    width: 50%;
+    z-index: 1;
+    animation: movedown 1s linear forwards;
+    opacity: 0;
+}
+.timeline-container-final{
     padding: 10px 50px;
     position: relative;
     width: 50%;
@@ -488,14 +548,11 @@ main {
 .timeline-container:nth-child(13) {
     animation-delay: 12s;
 }
-
-.text-box{
-    padding: 20px 30px;
-    background: #000000;
-    color: #ff00f4;
-    position: relative;
-    border-radius: 6px;
-    font-size: 16px;
+.timeline-container-final:nth-child(14) {
+    animation-delay: 13s;
+}
+.last-container{
+    left: 25%
 }
 .left-container{
     left: 0;
@@ -521,24 +578,31 @@ main {
 .timeline-main::after{
     content: '';
     position: absolute;
-    width: 6px;
-    height: 100%;
+    width: 4px;
+    height: 93%;
     background-color: #000000;
     top: 0;
     left: 50%;
-    margin-left: -3px;
+    margin-left: -2px;
     z-index: 0;
-    animation: moveline 8s linear forwards;
+    animation: moveline 13s linear forwards;
 }
 @keyframes moveline {
     0% {
         height: 0;
     }
     100% {
-        height: 100%;
+        height: 93%;
     }
 }
-
+.text-box{
+    padding: 20px 30px;
+    background: #000000;
+    color: #ff00f4;
+    position: relative;
+    border-radius: 6px;
+    font-size: 16px;
+}
 .text-box h2{
     font-weight: 600;
 }
@@ -546,7 +610,6 @@ main {
     display: inline-block;
     margin-bottom: 15px;
 }
-
 .left-container-arrow{
     height: 0;
     width: 0;
@@ -556,9 +619,8 @@ main {
     border-top: 15px solid transparent;
     border-bottom: 15px solid transparent;
     border-left: 15px solid #000000;
-    right: -15px;
+    right: -14px;
 }
-
 .right-container-arrow{
     height: 0;
     width: 0;
@@ -568,7 +630,7 @@ main {
     border-top: 15px solid transparent;
     border-bottom: 15px solid transparent;
     border-right: 15px solid #000000;
-    left: -15px;
+    left: -14px;
 }
 
 @media screen and (max-width: 600px) {
@@ -582,6 +644,14 @@ main {
         width: 100%;
         padding-left: 80px;
         padding-right: 25px;
+    }
+    .last-container{
+        width: 108%;
+        left:-21px;
+        border-radius: 2px;
+    }
+    .text-box{
+        font-size: 13px;
     }
     .text-box{
         font-size: 13px;
@@ -612,7 +682,6 @@ main {
     width:180px;
     height:140px;
 }
-
 .photo-stack img{
     position:absolute;
     width:180px;
@@ -621,7 +690,6 @@ main {
     border-radius:10px;
     box-shadow:0 5px 15px rgba(0,0,0,.4);
 }
-
 .right-container .photo-stack{
     left:-280px;
 }
@@ -646,118 +714,30 @@ main {
     top:16px;
     transform:rotate(10deg);
 }
-
 #imageModal{
     position:fixed;
     inset:0;
-
     background:rgba(0,0,0,.9);
-
     display:none;
-
     justify-content:center;
     align-items:center;
-
     z-index:99999;
 }
-
 #imageModal.active{
     display:flex;
 }
-
 #modalImage{
     max-width:90%;
     max-height:90vh;
-
     border-radius:12px;
-
     box-shadow:0 0 30px rgba(255,0,244,.5);
 }
-.last-container{
-    animation: none;
-    opacity: 1;
-    width: 90vh;
-    margin: 50px auto;
-    padding-bottom: -150px;
-}
 
-@media (max-width: 768px) {
-    .last-container{
-        width: 100%;
-        padding: 0 20px;
-    }
-}
 
 /* ============================
     COMEÇO Pagina thais
    ============================
 */
-
-
-.titulo-thais{
-    text-align:center;
-    color:#000;
-    font-family:'Glacial';
-    font-size:42px;
-    margin-bottom:10px;
-    position:relative;
-}
-
-.titulo-thais::after{
-    content:'';
-    display:block;
-    width:90px;
-    height:2px;
-    background:#000;
-    margin:5px auto 0;
-}
-
-.texto-thais{
-    max-width:1200px;
-    margin:20px auto 30px;
-    background:#000;
-    color:#ff00f4;
-    padding:15px 20px;
-    border-radius:5px;
-    text-align:center;
-    font-family:'Poppins';
-    font-size:22px;
-}
-
-.galeria-thais{
-    display:flex;
-    justify-content:center;
-    gap:30px;
-    flex-wrap:wrap;
-}
-
-.galeria-thais img{
-    width:280px;
-    height:380px;
-
-    object-fit:cover;
-
-    border-radius:4px;
-
-    cursor:pointer;
-
-    transition:.3s;
-}
-
-.galeria-thais img:hover{
-    transform:translateY(-5px);
-}
-.clique-imagens{
-    margin-top:15px;
-
-    text-align:center;
-
-    color:#000;
-
-    font-style:italic;
-
-    font-family:'Poppins';
-}
 
 /* ============================
     COMEÇO Tela-mensagem
@@ -771,6 +751,7 @@ main {
     justify-content: center;
     align-items: center;
     font-family: 'Poppins', sans-serif;
+    font-style: italic;
 }
 @media (max-width: 768px) {
     #background-tela{
