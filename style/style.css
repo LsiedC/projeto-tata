@@ -1051,6 +1051,296 @@ main {
         transform:translateX(-100%);
     }
 }
+/* 
+   ============================
+   FIM Pagina Nos
+   ============================
+*/
+/* 
+  ------------------------------------------
+*/
+/* 
+    =============================
+    COMEÇO Pagina teste_amor
+    =============================
+ */
+#amor{
+    width: 100%;
+    align-items: center;
+    padding-top: 13vh;
+    display: flex;
+    font-size: 35px;
+    font-family: 'Glacial';
+    align-items: center;
+    justify-content: center;
+    text-shadow: 2px 0px 5px #120020;
+    box-shadow: #000000;
+}
+
+#amor p {
+    position: relative;
+    display: flex;
+    margin: 0;
+    color:#000000;
+}
+#amor p::after {
+    content: "";
+    position: absolute;
+    left: -15px;
+    right: -15px;
+    bottom: -5px;
+    height: 2px;
+    background: #000000;
+    box-shadow: 0 0 8px #000000;
+}
+
+#descricao-amor{
+    width: fit-content;
+    max-width: 80%;
+
+    margin: 40px auto 0 auto;
+
+    background-color: #000000;
+    border-radius: 6px;
+    opacity: 80%;
+
+    padding: 8px 20px;
+}
+#descricao-amor p{
+    margin: 0;
+
+    font-family: 'Poppins';
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+
+    color:#ff00f4;
+
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    #amor p{
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    color:#ff00f4; 
+    }
+    #amor p::after {
+    background: #ff00f4;
+    box-shadow: 0 0 12px #ff00f4;
+    }
+}
+
+/* CALCULADORA */
+#love-calculator{
+    margin-top:40px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:30px;
+
+    flex-wrap:nowrap;
+}
+
+.input-group-love{
+    display:flex;
+    flex-direction:column;
+}
+
+.input-group-love label{
+    text-align:center;
+    font-family:'Poppins';
+    font-style: italic;
+    color:#000;
+    font-weight:bold;
+    margin-bottom:10px;
+}
+
+.input-group-love input{
+    width:260px;
+    padding:10px;
+
+    border:none;
+    outline:none;
+
+    background:#f7d8df;
+
+    font-style:italic;
+}
+
+@media (max-width: 768px){
+
+    #love-calculator{
+        flex-wrap: nowrap;
+        gap: 10px;
+    }
+
+    .input-group-love input{
+        width: 140px;
+        font-size: 14px;
+    }
+
+    #plus{
+        padding-top: 25px;
+        font-size: 30px;
+        color:#000000;
+    }
+}
+
+#plus{
+    align-content: center;
+    font-size:40px;
+    padding-top: 25px;
+    font-weight:bold;
+    color:#000000;
+}
+
+.btn-container{
+    display:flex;
+    justify-content:center;
+    margin-top:30px;
+}
+
+#btn-amor{
+    display:flex;
+    justify-content:center;
+    margin-top:30px;
+    border:none;
+    padding:10px 40px;
+
+    background:black;
+    color:#ff00f4;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+#btn-amor:hover{
+    transform:scale(1.05);
+}
+
+#resultado-amor{
+    margin-top:40px;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+    color:#000000;
+
+    font-family:'Poppins';
+}
+
+#resultado-amor h2{
+    font-size:70px;
+    margin:0;
+
+    text-shadow:0 0 15px #000000;
+}
+
+#resultado-amor p{
+    margin-top:10px;
+    font-size:22px;
+}
+
+
+/* Animação do coração */
+
+.heart-container{
+    position:relative;
+
+    width:220px;
+    height:220px;
+
+    margin:40px auto;
+}
+
+.heart-bg{
+    position:absolute;
+    inset:0;
+
+    font-size:220px;
+    line-height:220px;
+
+    color:#2c002a;
+
+    text-align:center;
+}
+
+#heart-fill{
+    position:absolute;
+    bottom:0;
+    left:0;
+    right:0;
+
+    overflow:hidden;
+
+    height:0%;
+
+    font-size:220px;
+    line-height:220px;
+
+    text-align:center;
+
+    color:#ff00f4;
+
+    transition:height .1s linear;
+}
+
+#percentual{
+    position:absolute;
+
+    top:50%;
+    left:50%;
+
+    transform:translate(-50%, -50%);
+
+    font-size:42px;
+    font-weight:bold;
+
+    color:white;
+
+    text-shadow:0 0 15px #ff00f4;
+}
+
+#mensagem-amor{
+    text-align:center;
+    color:#ff00f4;
+    font-size:22px;
+    margin-top:20px;
+}
+.coracao-chuva {
+    position: fixed;
+    z-index: 9999;
+    pointer-events: none;
+    user-select: none;
+
+    text-shadow:
+        0 0 8px #ff00f4,
+        0 0 15px #ff00f4;
+}
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.12);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.pulse {
+    animation: pulse .8s ease 3;
+}
 /* ============================
     COMEÇO Tela-mensagem
     ============================ 
