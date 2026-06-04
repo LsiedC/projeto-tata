@@ -989,7 +989,6 @@ main {
     }
 }
 
-
 #descricao-nos{
     width: 90%;
     margin-top: 40px;
@@ -1016,7 +1015,8 @@ main {
     display:flex;
     width:max-content;
 
-    animation: scroll 25s linear infinite;
+    animation: scroll 90s linear infinite;
+    will-change: transform;
 }
 
 .carousel-track img{
@@ -1027,9 +1027,19 @@ main {
 
     border-radius:8px;
 
-    margin-right:6px;
+    margin-right:10px;
 
     flex-shrink:0;
+    transition: transform .3s ease;
+    border-radius: 0.3s ease;
+}
+.carousel-track img:hover{
+    transform: scale(1.05);
+    border-radius: 8px;
+}
+.carousel-track img:active{
+    transform: scale(1.05);
+    border-radius: 8px;
 }
 
 @keyframes scroll{
@@ -1037,7 +1047,7 @@ main {
         transform:translateX(0);
     }
     to{
-        transform:translateX(-50%);
+        transform:translateX(-100%);
     }
 }
 /* ============================
