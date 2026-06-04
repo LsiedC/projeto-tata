@@ -687,6 +687,78 @@ main {
         padding: 0 20px;
     }
 }
+
+/* ============================
+    COMEÇO Pagina thais
+   ============================
+*/
+
+
+.titulo-thais{
+    text-align:center;
+    color:#000;
+    font-family:'Glacial';
+    font-size:42px;
+    margin-bottom:10px;
+    position:relative;
+}
+
+.titulo-thais::after{
+    content:'';
+    display:block;
+    width:90px;
+    height:2px;
+    background:#000;
+    margin:5px auto 0;
+}
+
+.texto-thais{
+    max-width:1200px;
+    margin:20px auto 30px;
+    background:#000;
+    color:#ff00f4;
+    padding:15px 20px;
+    border-radius:5px;
+    text-align:center;
+    font-family:'Poppins';
+    font-size:22px;
+}
+
+.galeria-thais{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.galeria-thais img{
+    width:280px;
+    height:380px;
+
+    object-fit:cover;
+
+    border-radius:4px;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.galeria-thais img:hover{
+    transform:translateY(-5px);
+}
+.clique-imagens{
+    margin-top:15px;
+
+    text-align:center;
+
+    color:#000;
+
+    font-style:italic;
+
+    font-family:'Poppins';
+}
+
 /* ============================
     COMEÇO Tela-mensagem
     ============================ 
