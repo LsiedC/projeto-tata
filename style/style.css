@@ -355,7 +355,7 @@ main {
 }
 .note__text p {
     font-family: 'Poppins';
-    font-size: 13px;
+    font-size: 11px;
     color: #222;
     left: 50%;
     text-align: center;
@@ -363,9 +363,10 @@ main {
 
 @media (max-width: 768px) {
     .note__text p {
-        font-size: 11px;
+        font-size: 9px;
+        font-weight: bold;
         font-family: 'Poppins';
-        color:#222;
+        color:#000000;
         text-align: center;
     }
 }
