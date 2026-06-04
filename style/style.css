@@ -755,7 +755,7 @@ main {
     position: relative;
     display: inline-block;
     margin: 0;
-    color:#000
+    color:#000000;
 }
 
 #thais-clique {
@@ -780,6 +780,20 @@ main {
     background: #000000;
     box-shadow: 0 0 8px #000000;
 }
+
+@media (max-width: 768px) {
+    #thais p{
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    color:#ff00f4; 
+    }
+    #thais p::after {
+    background: #ff00f4;
+    box-shadow: 0 0 12px #ff00f4;
+    }
+}
+
 #descricao-thais{
     width: 90%;
     margin-top: 40px;
@@ -864,7 +878,7 @@ main {
 
     margin-bottom: 30px;
 
-    color: #000;
+    color: #ff00f4;
     font-family: 'Glacial';
 }
 
@@ -880,9 +894,9 @@ main {
 
     height: 2px;
 
-    background: #000;
+    background: #ff00f4;
 
-    box-shadow: 0 0 8px rgba(0,0,0,.5);
+    box-shadow: 0 0 8px rgba(255, 0, 221, 0.5);
 }
 
 #modalText{
@@ -919,6 +933,112 @@ main {
 
 #closeModal:hover{
     opacity:.8;
+}
+/* 
+   ============================
+    FIM Pagina thaís
+   ============================
+*/
+/* 
+   ============================
+   COMEÇO Página nós
+   ============================
+*/
+
+#nos{
+    width: 100%;
+    align-items: center;
+    padding-top: 13vh;
+    display: flex;
+    font-size: 35px;
+    font-family: 'Glacial';
+    align-items: center;
+    justify-content: center;
+    text-shadow: 2px 0px 5px #120020;
+    box-shadow: #000000;
+}
+
+#nos p {
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    color:#000
+}
+
+#nos p::after {
+    content: "";
+    position: absolute;
+    left: -15px;
+    right: -15px;
+    bottom: -5px;
+    height: 2px;
+    background: #000000;
+    box-shadow: 0 0 8px #000000;
+}
+
+@media (max-width: 768px) {
+    #nos p{
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    color:#ff00f4; 
+    }
+    #nos p::after {
+    background: #ff00f4;
+    box-shadow: 0 0 12px #ff00f4;
+    }
+}
+
+
+#descricao-nos{
+    width: 90%;
+    margin-top: 40px;
+    margin-left: 40px;
+    background-color: #000000;
+    border-radius: 12px;
+    opacity: 80%;
+}
+#descricao-nos p{
+    font-family: 'Popins';
+    font-size: 20px;
+    font-style: italic;
+    padding-left: 2%;
+    color:#ff00f4;
+}
+
+.carousel{
+    width:100%;
+    overflow:hidden;
+    margin-top:50px;
+}
+
+.carousel-track{
+    display:flex;
+    width:max-content;
+
+    animation: scroll 25s linear infinite;
+}
+
+.carousel-track img{
+    width:260px;
+    height:350px;
+
+    object-fit:cover;
+
+    border-radius:8px;
+
+    margin-right:6px;
+
+    flex-shrink:0;
+}
+
+@keyframes scroll{
+    from{
+        transform:translateX(0);
+    }
+    to{
+        transform:translateX(-50%);
+    }
 }
 /* ============================
     COMEÇO Tela-mensagem
