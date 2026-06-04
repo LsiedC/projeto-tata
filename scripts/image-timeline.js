@@ -7,7 +7,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
         icon.addEventListener("click", () => {
 
-            if (window.innerWidth > 768) return;
 
             const photoStack = icon.parentElement.querySelector(".photo-stack img");
 modalImage.src = photoStack.src;
