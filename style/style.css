@@ -434,7 +434,6 @@ main {
     font-family: 'Glacial';
     align-items: center;
     justify-content: center;
-    text-shadow: 2px 0px 5px #120020;
 }
 
 #cronologh p {
@@ -462,6 +461,7 @@ main {
             #330033 20%,
             #8d008d 60%,
             #ff00f4 100%);
+    box-shadow: 0 0 5px #ff00f4;
 }
 
 @media (max-width: 768px) {
@@ -738,7 +738,188 @@ main {
     COMEÇO Pagina thais
    ============================
 */
+#thais{
+    width: 100%;
+    align-items: center;
+    padding-top: 13vh;
+    display: flex;
+    font-size: 35px;
+    font-family: 'Glacial';
+    align-items: center;
+    justify-content: center;
+    text-shadow: 2px 0px 5px #120020;
+    box-shadow: #000000;
+}
 
+#thais p {
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    color:#000
+}
+
+#thais-clique {
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 16px;
+    padding-top: 10px;
+}
+@media (max-width: 768px){
+    #thais-clique{
+    color:#ff00f4;
+    }
+}
+#thais p::after {
+    content: "";
+    position: absolute;
+    left: -15px;
+    right: -15px;
+    bottom: -5px;
+    height: 2px;
+    background: #000000;
+    box-shadow: 0 0 8px #000000;
+}
+#descricao-thais{
+    width: 90%;
+    margin-top: 40px;
+    margin-left: 40px;
+    background-color: #000000;
+    border-radius: 12px;
+    opacity: 80%;
+}
+#descricao-thais p{
+    font-family: 'Popins';
+    font-size: 20px;
+    font-style: italic;
+    padding-left: 2%;
+    color:#ff00f4;
+}
+
+.imagens-flex{
+    display: flex;
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+.imagens-flex img{
+    width:280px;
+    height:380px;
+
+    object-fit:cover;
+
+    border-radius:4px;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+#textModal{
+    position:fixed;
+    inset:0;
+
+    background:rgba(0,0,0,.85);
+
+    display:none;
+
+    justify-content:center;
+    align-items:center;
+
+    z-index:99999;
+}
+
+#textModal.active{
+    display:flex;
+}
+
+.text-modal-content{
+
+    width:min(90%,900px);
+
+    max-height:80vh;
+
+    overflow-y:auto;
+
+    background:linear-gradient(
+        155deg,
+        #000000,
+        #5b0059,
+        #b100b1
+    );
+
+    border-radius:12px;
+
+    padding:30px;
+    opacity: 95%;
+}
+
+#modalTitle{
+    position: relative;
+    display: inline-block;
+
+    left: 50%;
+    transform: translateX(-50%);
+
+    margin-bottom: 30px;
+
+    color: #000;
+    font-family: 'Glacial';
+}
+
+#modalTitle::after{
+    content: "";
+
+    position: absolute;
+
+    left: -15px;
+    right: -15px;
+
+    bottom: -6px;
+
+    height: 2px;
+
+    background: #000;
+
+    box-shadow: 0 0 8px rgba(0,0,0,.5);
+}
+
+#modalText{
+
+    background:black;
+
+    color:#ff00f4;
+
+    padding:20px;
+
+    border-radius:8px;
+
+    font-family:'Poppins';
+
+    line-height:1.8;
+}
+
+#closeModal{
+
+    margin-top:20px;
+
+    padding:10px 20px;
+
+    border:none;
+
+    border-radius:6px;
+
+    background:black;
+
+    color:#ff00f4;
+
+    cursor:pointer;
+}
+
+#closeModal:hover{
+    opacity:.8;
+}
 /* ============================
     COMEÇO Tela-mensagem
     ============================ 
