@@ -9,6 +9,7 @@ function calcularAmor() {
     }
 
     const lucas = [
+        "leonardo",
         "alemao",
         "loirudo",
         "gringo",
@@ -26,6 +27,7 @@ function calcularAmor() {
     ];
 
     const thais = [
+        "leticia",
         "tata",
         "tatha",
         "manga",
@@ -84,7 +86,7 @@ function calcularAmor() {
     if (porcentagem === 100) {
 
         mensagem =
-            "💜 Nossos destinos foram traçados na maternidade, amor da minha vida.";
+            "💜 Seus destinos foram traçados na maternidade.";
 
     } else if (porcentagem >= 85) {
 
