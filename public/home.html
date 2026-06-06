@@ -54,20 +54,23 @@
   <main id="home">
     <h1 class="titulo-home">Bienvenue</h1>
     <div class="grid-home">
+
       <div class="card autor">
+
         <p class="texto-autor">Autor</p>
         <img id="img-autor" src="../assets/img/foto_loirudo.jpeg" alt="Foto do autor">
+
         <p class="titulo-pro fw-bold">Prós</p>
-          <a href="home-loirudo.html">
-            <h6 class="href texto-pro">Loirudo</h6>
-          </a>
-          <a href="home-pesca.html">
-          <h6 class="href texto-pro">Pesca dor</h6>
-          </a>
-          <h6 class="texto-pro">Forte</h6>
-          <h6 class="texto-pro">2 Beijos na vida</h6>
-          <h6 class="texto-pro">Bigode espeta xota</h6>
+        <h6 class="texto-pro loirudo" data-bs-toggle="modal" data-bs-target="#modalLoirudo">
+          Loirudo
+        </h6>
+        <h6 class="texto-pro">Pescador</h6>
+        <h6 class="texto-pro">Forte</h6>
+        <h6 class="texto-pro">2 Beijos na vida</h6>
+        <h6 class="texto-pro">Bigode espeta xota</h6>
+
       </div>
+
       <div class="card descricao">
         <p>Este é um site dedicado a Thaís e nossa história enquanto seres mortais nesse planeta.
           Se você não é a Thaís, saiba o que pude sentir nesses meses por essa linduda.
@@ -90,14 +93,16 @@
               <div class="note js-note">
                 <div class="note__text">
                   <p>
-                    Buenas meu amor, esse site é para nós lembrarmos das nossas memórias especiais e algumas outras coisas.
+                    Buenas meu amor, esse site é para nós lembrarmos das nossas memórias especiais e algumas outras
+                    coisas.
                   </p>
                 </div>
               </div>
               <div class="note js-note">
                 <div class="note__text">
                   <p>
-                    quero que saiba o quão feliz sou de encontrar alguém tão incrível como você e poder vivenciar essas experiências juntos.
+                    quero que saiba o quão feliz sou de encontrar alguém tão incrível como você e poder vivenciar essas
+                    experiências juntos.
                   </p>
                 </div>
               </div>
@@ -112,15 +117,15 @@
               </div>
             </div>
           </div>
-          
+
         </div>
 
       </div>
     </div>
   </main>
-          <footer>
-            <p>Todos os direitos reservados a Thaís e Lucas</p>
-          </footer>
+  <footer>
+    <p>Todos os direitos reservados a Thaís e Lucas</p>
+  </footer>
   <!-- Scritps -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
@@ -128,6 +133,48 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script src="../scripts/home.js"></script>
 
+  <div class="modal fade" id="modalLoirudo" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content modal-loirudo">
+
+            <div class="modal-header">
+                <h5 class="modal-title">Loirudo em seu habitat natural</h5>
+
+                <button type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal">
+                </button>
+            </div>
+
+            <div class="modal-body">
+
+                <div class="galeria-loirudo">
+
+                    <img src="../assets/img/fotos_lucas/foto_academia.jpeg" alt="">
+                    <img src="../assets/img/fotos_lucas/foto_academia2.jpeg" alt="">
+                    <img src="../assets/img/fotos_lucas/foto_academia3.jpeg" alt="">
+                    <img src="../assets/img/fotos_lucas/foto_academia4.jpeg" alt="">
+                    <img src="../assets/img/fotos_lucas/foto_academia5.jpeg" alt="">
+                    <img src="../assets/img/fotos_lucas/foto_academia6.jpeg" alt="">
+                    <img src="../assets/img/fotos_lucas/foto_lucas.jpeg" alt="">
+                    <img src="../assets/img/fotos_lucas/foto_lucas2.jpeg" alt="">
+                    <img src="../assets/img/fotos_lucas/foto_pescador2.jpeg" alt="">
+                    <img src="../assets/img/fotos_lucas/foto_pescador3.jpeg" alt="">
+                    <img src="../assets/img/fotos_lucas/foto_pescador4.jpeg" alt="">
+                    <img src="../assets/img/fotos_lucas/foto_pescador5.jpeg" alt="">
+                    <img src="../assets/img/fotos_lucas/foto_pescadorzin.jpeg" alt="">
+                    <img src="../assets/img/fotos_lucas/foto_teta.jpeg" alt="">
+                    <img src="../assets/img/fotos_lucas/foto_teta2.jpeg" alt="">
+                    <img src="../assets/img/fotos_lucas/foto_lucas3.jpeg" alt="">
+
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
 </body>
 
 </html>
