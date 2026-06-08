@@ -1750,6 +1750,10 @@ main {
         font-size: 12px;
         font-weight: bold;
     }
+    #saramago-container {
+        width: 80%;
+        margin: 0 auto;
+    }
 }
 
 #page-transition {
