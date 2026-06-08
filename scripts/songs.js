@@ -54,92 +54,92 @@ const songs = [
     {
         name: "Preciso Dizer Que Te Amo",
         artist: "Cazuza, Bebel Gilberto",
-        path: "../assets/music/precisodizerqueteamo.mp3",
-        cover: "../assets/music/capas_musica/precisodizerqueteamo.png"
+        path: "../Assets/music/precisodizerqueteamo.mp3",
+        cover: "../Assets/music/capas_musica/precisodizerqueteamo.png"
     },
     
     {
         name: "Vagabundo e a Dama",
         artist: "Oriente",
-        path: "../assets/music/vagabundoeadama.mp3",
-        cover: "../assets/music/capas_musica/vagabundo.png"
+        path: "../Assets/music/vagabundoeadama.mp3",
+        cover: "../Assets/music/capas_musica/vagabundo.png"
     },
 
     {
         name: "Serenata Existencialista",
         artist: "O grilo",
-        path: "../assets/music/serenata_existencialista.mp3",
-        cover: "../assets/music/capas_musica/serenata.png"
+        path: "../Assets/music/serenata_existencialista.mp3",
+        cover: "../Assets/music/capas_musica/serenata.png"
     },
     
     {
         name: "Dizeres",
         artist: "Organico, Lourena, Sant, Léo Casa 1, Rap box",
-        path: "../assets/music/undaia.mp3",
-        cover: "../assets/music/capas_musica/undaia.png"
+        path: "../Assets/music/undaia.mp3",
+        cover: "../Assets/music/capas_musica/undaia.png"
     },
 
     {
         name: "Poesia Acústica 2",
         artist: "Delacruz, Maria, Ducon, Luiz Lins, Diomedes, Bk', Kayuá",
-        path: "../assets/music/poesia2.mp3",
-        cover: "../assets/music/capas_musica/poesia2.png"
+        path: "../Assets/music/poesia2.mp3",
+        cover: "../Assets/music/capas_musica/poesia2.png"
     },
 
     {
         name: "Meu Novo Mundo",
         artist: "Charlie Brown Jr.",
-        path: "../assets/music/meunovomundo.mp3",
-        cover: "../assets/music/capas_musica/meunovomundo.jpg"
+        path: "../Assets/music/meunovomundo.mp3",
+        cover: "../Assets/music/capas_musica/meunovomundo.jpg"
     },
 
     {
         name: "Exagerado",
         artist: "Cazuza",
-        path: "../assets/music/Exagerado.mp3",
-        cover: "../assets/music/capas_musica/exagerado.png"
+        path: "../Assets/music/Exagerado.mp3",
+        cover: "../Assets/music/capas_musica/exagerado.png"
     },
 
     {
         name: "Ela Une Todas As Coisas",
         artist: "Jorge Vercillo",
-        path: "../assets/music/une_todas.mp3",
-        cover: "../assets/music/capas_musica/une_todas.png"
+        path: "../Assets/music/une_todas.mp3",
+        cover: "../Assets/music/capas_musica/une_todas.png"
     },
 
     {
         name: "Flor de Tangerina",
         artist: "Alceu Valença",
-        path: "../assets/music/flor_tangerina.mp3",
-        cover: "../assets/music/capas_musica/flor_tangerina.png"
+        path: "../Assets/music/flor_tangerina.mp3",
+        cover: "../Assets/music/capas_musica/flor_tangerina.png"
     },
     
     {
         name: "Aliança",
         artist: "Tribalistas",
-        path: "../assets/music/alianca.mp3",
-        cover: "../assets/music/capas_musica/alianca.png"
+        path: "../Assets/music/alianca.mp3",
+        cover: "../Assets/music/capas_musica/alianca.png"
     },
 
     {
         name: "Me Namora",
         artist: "Edu Ribeiro",
-        path: "../assets/music/menamora.mp3",
-        cover: "../assets/music/capas_musica/menamora.png"
+        path: "../Assets/music/menamora.mp3",
+        cover: "../Assets/music/capas_musica/menamora.png"
     },
 
     {
         name: "Uma Arlinda Mulher",
         artist: "Mamonas Assassinas",
-        path: "../assets/music/umaarlinda.mp3",
-        cover: "../assets/music/capas_musica/umaarlinda.png"
+        path: "../Assets/music/umaarlinda.mp3",
+        cover: "../Assets/music/capas_musica/umaarlinda.png"
     },
     
     {
         name: "Eu Te Devoro",
         artist: "Djavan",
-        path: "../assets/music/eutedevoro.mp3",
-        cover: "../assets/music/capas_musica/eutedevoro.png"
+        path: "../Assets/music/eutedevoro.mp3",
+        cover: "../Assets/music/capas_musica/eutedevoro.png"
     }
 
 
