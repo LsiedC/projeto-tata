@@ -1857,6 +1857,12 @@ main {
     color: #ff00f4;
 }
 
+.btn-spotify{
+    display: flex;
+    justify-content: center;
+    color: #ff00f4;
+}
+
 @media (max-width: 768px) {
     #musicapag p {
         position: relative;
