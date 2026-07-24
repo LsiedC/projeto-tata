@@ -219,6 +219,12 @@ footer {
     height: 50px;
 }
 
+.nmr{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 h6 {
     font-size: 18px;
     font-family: 'Poppins';
@@ -831,9 +837,106 @@ main {
     animation-delay: 21s;
 }
 
-.timeline-container-final:nth-child(23) {
+.timeline-container:nth-child(23) {
     animation-delay: 22s;
 }
+
+.timeline-container:nth-child(24) {
+    animation-delay: 23s;
+}
+
+.timeline-container:nth-child(25) {
+    animation-delay: 24s;
+}
+
+.timeline-container:nth-child(26) {
+    animation-delay: 25s;
+}
+
+.timeline-container:nth-child(27) {
+    animation-delay: 26s;
+}
+
+.timeline-container:nth-child(28) {
+    animation-delay: 27s;
+}
+
+.timeline-container:nth-child(29) {
+    animation-delay: 28s;
+}
+
+.timeline-container:nth-child(30) {
+    animation-delay: 29s;
+}
+
+.timeline-container:nth-child(31) {
+    animation-delay: 30s;
+}
+
+.timeline-container:nth-child(32) {
+    animation-delay: 31s;
+}
+
+.timeline-container:nth-child(33) {
+    animation-delay: 32s;
+}
+
+.timeline-container:nth-child(34) {
+    animation-delay: 33s;
+}
+
+.timeline-container:nth-child(35) {
+    animation-delay: 34s;
+}
+
+.timeline-container:nth-child(36) {
+    animation-delay: 35s;
+}
+
+.timeline-container:nth-child(37) {
+    animation-delay: 36s;
+}
+
+.timeline-container:nth-child(38) {
+    animation-delay: 37s;
+}
+
+.timeline-container:nth-child(39) {
+    animation-delay: 38s;
+}
+
+.timeline-container:nth-child(40) {
+    animation-delay: 39s;
+}
+
+.timeline-container:nth-child(41) {
+    animation-delay: 40s;
+}
+
+.timeline-container:nth-child(42) {
+    animation-delay: 41s;
+}
+
+.timeline-container:nth-child(43) {
+    animation-delay: 42s;
+}
+
+.timeline-container:nth-child(44) {
+    animation-delay: 43s;
+}
+
+.timeline-container:nth-child(45) {
+    animation-delay: 44s;
+}
+
+.timeline-container:nth-child(46) {
+    animation-delay: 45s;
+}
+
+.timeline-container-final:nth-child(47) {
+    animation-delay: 46s;
+}
+
 
 .last-container {
     left: 25%
@@ -883,7 +986,7 @@ main {
     }
 
     100% {
-        height: 93%;
+        height: 98%;
     }
 }
 
@@ -928,6 +1031,8 @@ main {
     border-right: 15px solid #000000;
     left: -14px;
 }
+
+
 
 @media screen and (max-width: 600px) {
     .timeline-main {
